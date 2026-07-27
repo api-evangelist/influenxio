@@ -1,8 +1,25 @@
 aid: influenxio
 name: Influenxio
-description: 'Influenxio is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Influenxio is an Instagram influencer-marketing platform that connects
+  brands with a database of more than 500,000 influencer profiles through an AI-powered
+  matching system. Brands use its campaign-management tooling to search, invite, and
+  collaborate with influencers at scale for brand awareness, website traffic, and
+  affiliate marketing, including a pay-per-click affiliate model and content-authorization
+  workflows for reusing user-generated content. It is a B2B SaaS product aimed at
+  marketers and brands rather than developers, and does not publish a public API,
+  developer portal, or SDKs.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://res.cloudinary.com/influenxio/image/upload/v1609926905/static/influenxio-thumbnail-2021.jpg
 url: https://raw.githubusercontent.com/api-evangelist/influenxio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Influencer Marketing
+- Marketing
+- Social Media
+- Instagram
+- Creator Economy
+- Affiliate Marketing
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.influenxio.com/en-US
+- type: Pricing
+  url: https://www.influenxio.com/en-US/plans
+- type: TermsOfService
+  url: https://www.influenxio.com/en-US/terms
+- type: PrivacyPolicy
+  url: https://www.influenxio.com/en-US/privacy
+- type: Support
+  url: https://m.me/influenxio
+- type: Blog
+  url: https://blog.influenxio.com/
+- type: DomainSecurity
+  url: security/influenxio-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
