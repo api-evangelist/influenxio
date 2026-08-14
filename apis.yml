@@ -9,16 +9,23 @@ description: 'Influenxio is an Instagram influencer-marketing platform that conn
   marketers and brands rather than developers, and does not publish a public API,
   developer portal, or SDKs.'
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: paid
+  onboarding: self-serve
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Paid · Self-serve signup
+  confidence: high
+  source:
+  - https://www.influenxio.com/en-US/plans
+  - https://www.influenxio.com/sign-up
+  generated: '2026-08-13'
+  method: searched
+  note: >-
+    Applies to the PRODUCT, not to an API. Registration is free and self-serve;
+    the platform is paid (prepaid wallet for the self-service tier, NT$200,000+
+    for the managed enterprise tier) with a 30-day satisfaction guarantee rather
+    than a free trial. There is no public API, so no API access model exists.
 image: https://res.cloudinary.com/influenxio/image/upload/v1609926905/static/influenxio-thumbnail-2021.jpg
 url: https://raw.githubusercontent.com/api-evangelist/influenxio/refs/heads/main/apis.yml
 x-type: company
@@ -29,7 +36,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-13'
 tags:
 - Company
 - Enterprise
@@ -59,10 +66,45 @@ common:
   url: https://m.me/influenxio
 - type: Blog
   url: https://blog.influenxio.com/
+- type: BlogRSS
+  url: https://blog.influenxio.com/feed/
+- type: HelpCenter
+  url: https://www.influenxio.com/en-US/faq
+- type: SignUp
+  url: https://www.influenxio.com/sign-up
+- type: Login
+  url: https://www.influenxio.com/login
+- type: GitHubOrganization
+  url: https://github.com/Influenxio
 - type: DomainSecurity
   url: security/influenxio-domain-security.yml
+- type: Plans
+  url: plans/influenxio-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/influenxio-rate-limits.yml
+- type: LLMsTxt
+  url: llms/influenxio-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 5
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Influenxio ships only an end-user SaaS product — its full 106-URL sitemap
+    contains no developer, docs, or API page, and the one API host that exists,
+    api.influenxio.com, is the web app's private backend that answers HTTP 401
+    JSON on every path probed including /openapi.json, /graphql, /mcp and every
+    /.well-known/ location.
+  evidence:
+  - url: https://api.influenxio.com/openapi.json
+    status: 401
+  - url: https://www.influenxio.com/en-US/api
+    status: 404
+  - url: https://www.influenxio.com/sitemap-0.xml
+    status: 200
+  - url: https://www.influenxio.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-13'
