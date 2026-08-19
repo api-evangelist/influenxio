@@ -1,0 +1,23 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.influenxio.com/en-US/plans
+note: >-
+  Influenxio publishes no API and therefore no rate limits. The site has no
+  developer portal, no API reference, and no documentation host — the full
+  sitemap (https://www.influenxio.com/sitemap-0.xml, HTTP 200, 106 URLs) contains
+  no developer, docs, or API page. The one API host that exists,
+  https://api.influenxio.com, is the web application's private backend and
+  answers HTTP 401 with {"error":{"code":401,"message":"Unauthorized"}} on every
+  path probed, including /openapi.json, /docs and /.well-known/*, so no
+  rate-limit headers can be observed anonymously either.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+x-evidence:
+  - url: https://api.influenxio.com/
+    http_status: 401
+    fetched: '2026-08-13'
+  - url: https://www.influenxio.com/en-US/api
+    http_status: 404
+    fetched: '2026-08-13'

@@ -1,0 +1,81 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.influenxio.com/en-US/plans
+note: >-
+  Read from the live, server-rendered pricing page at
+  https://www.influenxio.com/en-US/plans (HTTP 200). Influenxio publishes two
+  commercial tiers for brands/advertisers. Only the enterprise tier carries a
+  published number; the self-service tier is priced per-collaboration out of a
+  prepaid wallet ("儲值金") rather than as a listed subscription fee, so no
+  headline price is shown on the page. Prices below are recorded exactly as
+  published in New Taiwan Dollars. These are PRODUCT plans — Influenxio
+  publishes no API plans, no API pricing, and no developer tier.
+currency: TWD
+plan_count: 2
+plans:
+  - name: 進階彈性方案
+    name_en: Advanced Flexible Plan
+    type: self-service
+    price: null
+    currency: TWD
+    billing_period: null
+    pricing_model: prepaid-wallet
+    note: >-
+      No headline price published. The page states collaboration fees are quoted
+      by each creator and offset in full against a prepaid account balance
+      (儲值金全額折抵). Entry is via free registration ("免費註冊找網紅").
+    audience:
+      - 中小企業主 (SMB owners)
+      - 品牌行銷人員 (brand marketers)
+      - 廣告媒體代理商 (ad/media agencies)
+    included:
+      - 獨家數據標籤，巨量網紅資料檢索 — proprietary data tags over the creator database
+      - 透明報價款項支付，一站完成 — transparent creator quoting and payment in one place
+      - 集結成效數據，方便匯出整理 — performance data aggregation and export
+      - 合作人數無上限，儲值金全額折抵 — unlimited collaborations, wallet offsets fees in full
+    limits:
+      collaborations: unlimited
+      region: 不限執行地區及產業別 (no region or industry restriction)
+  - name: 專業網紅行銷團隊代客執行（企業客製方案）
+    name_en: Enterprise Custom Plan — managed influencer marketing service
+    type: enterprise
+    price: 200000
+    price_display: NT$ 20 萬起
+    price_qualifier: starting-at
+    currency: TWD
+    billing_period: per-engagement
+    pricing_model: custom
+    audience:
+      - 中大型品牌企業 (mid/large brands)
+      - 廣告媒體代理商 (ad/media agencies)
+    included:
+      - 免費提案 + 比稿服務 — free proposal and competitive pitch
+      - 網紅溝通 + 貼文審稿 — creator communication and post review
+      - 數據分析 + 優化建議 — analytics and optimization recommendations
+    contact: 立即諮詢顧問 (consult an advisor)
+guarantee:
+  name: 30 天滿意保證
+  name_en: 30-day satisfaction guarantee
+  terms: >-
+    Cancel within thirty (30) days of the subscription date and the prepaid
+    membership fee is refunded less the first month plus any post fees and
+    experience fees already used. After 30 days the right to withdraw lapses.
+  source: https://www.influenxio.com/en-US/terms
+payment_methods:
+  - credit-card (online)
+  - bank-transfer (arranged via contact form)
+api_plans:
+  published: false
+  note: >-
+    No API plan, API pricing, rate tier, or developer tier is published anywhere
+    on the pricing page or the site. The pricing page makes no mention of an API,
+    SDK, or integration program.
+historical_note: >-
+  The page's own en-US i18n bundle still ships superseded plan keys — a "Basic
+  pre-paid plan" at NT$63,000 and an "Enterprise Plan" starting at NT$150,000 —
+  which the live page no longer renders. Recorded here only to explain the
+  discrepancy; the tiers above are what the page actually serves today.
+x-evidence:
+  - url: https://www.influenxio.com/en-US/plans
+    http_status: 200
+    fetched: '2026-08-13'

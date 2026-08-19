@@ -1,0 +1,66 @@
+generated: '2026-08-13'
+method: searched
+source: >-
+  npm registry search, PyPI, RubyGems, crates.io, GitHub org
+  https://github.com/Influenxio, and the influenxio.com site
+note: >-
+  No first-party Influenxio API client library exists in any public package
+  registry. Influenxio publishes no API, so there is nothing for an SDK to wrap.
+  The two public repositories in the company's GitHub organization are Flutter/Dart
+  utilities used to build the Influenxio mobile app — they are not clients for an
+  Influenxio API and are marked official:false for that purpose. Registries were
+  queried unauthenticated on 2026-08-13; every one returned zero matches for
+  "influenxio".
+package_count: 0
+sdk_count: 0
+packages: []
+registry_searches:
+  - registry: npm
+    query: influenxio
+    endpoint: https://registry.npmjs.org/-/v1/search?text=influenxio
+    matches: 0
+  - registry: pypi
+    query: influenxio
+    endpoint: https://pypi.org/pypi/influenxio/json
+    http_status: 404
+    matches: 0
+  - registry: rubygems
+    query: influenxio
+    endpoint: https://rubygems.org/api/v1/search.json?query=influenxio
+    matches: 0
+  - registry: crates.io
+    query: influenxio
+    endpoint: https://crates.io/api/v1/crates?q=influenxio
+    matches: 0
+org_repositories:
+  - name: cloudinary-sdk
+    url: https://github.com/Influenxio/cloudinary-sdk
+    language: Dart
+    description: >-
+      Dart package for the Cloudinary API (a third-party service Influenxio uses
+      for media hosting). Not an Influenxio API client.
+    official: false
+    registry: null
+    version: null
+    published: null
+    last_pushed: '2023-05-04'
+    archived: false
+  - name: image_gallery_saver
+    url: https://github.com/Influenxio/image_gallery_saver
+    language: Dart
+    description: >-
+      Flutter plugin for saving images to the device photo album. Third-party
+      utility, archived. Not an Influenxio API client.
+    official: false
+    registry: null
+    version: null
+    published: null
+    last_pushed: '2021-09-09'
+    archived: true
+mobile_apps:
+  - name: Influenxio 圈圈 (Creator app)
+    platform: ios
+    url: https://apps.apple.com/tw/app/influenxio%E5%9C%88%E5%9C%88/id1580672595
+    note: >-
+      End-user creator app, not a developer artifact. Recorded because it is the
+      only shipped Influenxio-built client software that is publicly distributed.
