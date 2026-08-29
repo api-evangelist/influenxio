@@ -8,6 +8,17 @@ description: 'Influenxio is an Instagram influencer-marketing platform that conn
   workflows for reusing user-generated content. It is a B2B SaaS product aimed at
   marketers and brands rather than developers, and does not publish a public API,
   developer portal, or SDKs.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: self-serve
