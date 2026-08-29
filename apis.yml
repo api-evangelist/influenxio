@@ -39,6 +39,9 @@ accessModel:
     than a free trial. There is no public API, so no API access model exists.
 image: https://res.cloudinary.com/influenxio/image/upload/v1609926905/static/influenxio-thumbnail-2021.jpg
 url: https://raw.githubusercontent.com/api-evangelist/influenxio/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "It is a B2B SaaS product aimed at marketers and brands rather than developers, and does not publish a public API, developer portal, or SDKs."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
